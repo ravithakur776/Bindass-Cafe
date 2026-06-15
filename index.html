@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Bindass Cafe – Mathura's Favorite Food Spot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="#" class="nav-logo">BINDASS</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#info">Find Us</a></li>
+      </ul>
+      <button
+        class="nav-cta"
+        onclick="
+          document.getElementById('info').scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        Order Now
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+
+      <!-- Floating food -->
+      <div class="floating-item fi-1">🍕</div>
+      <div class="floating-item fi-2">🍔</div>
+      <div class="floating-item fi-3">🥟</div>
+      <div class="floating-item fi-4">🌮</div>
+      <div class="floating-item fi-5">🍜</div>
+      <div class="floating-item fi-6">☕</div>
+
+      <div class="hero-content">
+        <div class="hero-tag">📍 Mathura's Favourite Food Spot</div>
+        <h1 class="hero-title">BINDASS<br /><span>CAFE</span></h1>
+        <p class="hero-sub">
+          Food, fun, and unforgettable moments—<br />only at Bindass Cafe
+        </p>
+        <div class="hero-btns">
+          <a href="tel:+919266204345" class="btn-primary">📞 Call to Order</a>
+          <a
+            href="https://wa.me/919266204345"
+            target="_blank"
+            class="btn-whatsapp"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.15.347-.385.521-.578.173-.193.231-.33.347-.55.116-.22.058-.413-.04-.563-.099-.149-.842-2.034-1.16-2.717-.198-.42-.405-.43-.595-.435-.156-.005-.347-.005-.546-.005-.198 0-.521.073-.793.349-.272.275-1.04 1.016-1.04 2.475 0 1.46 1.064 2.866 1.212 3.064.149.198 2.066 3.16 5.011 4.305 2.945 1.145 2.945.764 3.484.713.538-.05 1.758-.713 2.005-1.405.247-.69.247-1.282.173-1.405-.074-.124-.272-.198-.57-.347z"
+              />
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 1.892.526 3.661 1.438 5.168L2 22l4.973-1.412A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.084-1.118l-.293-.174-3.018.857.85-2.94-.19-.302A8 8 0 1112 20z"
+              />
+            </svg>
+            WhatsApp
+          </a>
+          <a href="#menu" class="btn-secondary">Explore Menu</a>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Rating</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-number">₹200</div>
+          <div class="stat-label">Avg Per Order</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Veg Only</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Menu Items</div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-card-3d" id="tiltCard">
+            <div class="cafe-illustration"><img src="https://i.pinimg.com/736x/f4/4b/1a/f44b1aff654012d97d0933d5927be6ef.jpg" alt="" height="1000px"></div>
+            <div class="about-badge badge-veg">🥦 100% Veg</div>
+            <div class="about-badge badge-delivery">🛵 Home Delivery</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-tag reveal">Our Story</p>
+          <h2 class="section-title reveal delay-1">
+            THE <span>BINDASS</span> VIBE
+          </h2>
+          <p class="about-desc reveal delay-2">
+            Bindass Cafe is a
+            <span class="about-highlight"
+              >lively Mathura hangout near the ATV Project</span
+            >, serving a wide mix of fast food, pizzas, burgers, momos, Chinese,
+            noodles, thalis, biryani, bakery items, and cold coffee.
+          </p>
+          <p class="about-desc reveal delay-3">
+            We keep a
+            <span class="about-highlight">fun, casual food-first vibe</span>.
+            Whether you're craving street-style momos, a loaded pizza, a Momo
+            Burger, or a refreshing cold coffee — Bindass has you covered.
+          </p>
+          <div class="feature-pills reveal delay-4">
+            <span class="pill">🛵 Home Delivery</span>
+            <span class="pill">🥡 Takeaway</span>
+            <span class="pill">🥦 Pure Veg</span>
+            <span class="pill">🍽️ Lunch & Dinner</span>
+            <span class="pill">📍 Near ATV Project</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+      <div class="menu-inner">
+        <div class="menu-header">
+          <p class="section-tag reveal">What We Serve</p>
+          <h2 class="section-title reveal delay-1">OUR <span>MENU</span></h2>
+        </div>
+
+        <div class="menu-marquee-wrapper">
+          <div class="menu-marquee">
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>PIZZA PATTIES</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>MOMO BURGER</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>SANDWICHES</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>COLD COFFEE</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>CHINESE NOODLES</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>BIRYANI</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>SOUTH INDIAN</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>SPECIAL THALI</span
+            >
+            <!-- Duplicate for seamless loop -->
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>PIZZA PATTIES</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>MOMO BURGER</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>SANDWICHES</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>COLD COFFEE</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>CHINESE NOODLES</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>BIRYANI</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>SOUTH INDIAN</span
+            >
+            <span class="marquee-item"
+              ><span class="marquee-dot"></span>SPECIAL THALI</span
+            >
+          </div>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-card reveal delay-1 highlight">
+            <span class="menu-emoji">🍕</span>
+            <div class="menu-name">Pizza & Patties</div>
+            <div class="menu-desc">
+              Crispy bases, loaded toppings, and our signature pizza patties
+            </div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <span class="menu-emoji">🍔</span>
+            <div class="menu-name">Burgers</div>
+            <div class="menu-desc">
+              Juicy burgers and the legendary Momo Burger
+            </div>
+          </div>
+          <div class="menu-card reveal delay-3">
+            <span class="menu-emoji">🥟</span>
+            <div class="menu-name">Momos</div>
+            <div class="menu-desc">
+              Steamed, fried, or tandoor — every style of Mathura's favourite
+            </div>
+          </div>
+          <div class="menu-card reveal delay-4">
+            <span class="menu-emoji">🥪</span>
+            <div class="menu-name">Sandwiches</div>
+            <div class="menu-desc">
+              Toasted, grilled, and loaded with fresh ingredients
+            </div>
+          </div>
+          <div class="menu-card reveal delay-1">
+            <span class="menu-emoji">🍜</span>
+            <div class="menu-name">Chinese & Noodles</div>
+            <div class="menu-desc">
+              Hakka noodles, fried rice, and Indo-Chinese street classics
+            </div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <span class="menu-emoji">🍛</span>
+            <div class="menu-name">Special Thali</div>
+            <div class="menu-desc">
+              Complete wholesome meals — the true Bindass experience
+            </div>
+          </div>
+          <div class="menu-card reveal delay-3">
+            <span class="menu-emoji">🍲</span>
+            <div class="menu-name">Biryani</div>
+            <div class="menu-desc">
+              Aromatic, slow-cooked biryani with bold Mathura spices
+            </div>
+          </div>
+          <div class="menu-card reveal delay-4 highlight">
+            <span class="menu-emoji">☕</span>
+            <div class="menu-name">Cold Coffee & Bakery</div>
+            <div class="menu-desc">
+              Chilled cold coffees, cakes, and freshly baked treats
+            </div>
+          </div>
+          <div class="menu-card reveal delay-1">
+            <span class="menu-emoji">🍱</span>
+            <div class="menu-name">South Indian</div>
+            <div class="menu-desc">Dosas, idlis & more from down south</div>
+          </div>
+          <div class="menu-card reveal delay-2">
+            <span class="menu-emoji">🍟</span>
+            <div class="menu-name">French Fries</div>
+            <div class="menu-desc">
+              Crispy, golden, perfectly seasoned sides
+            </div>
+          </div>
+          <div class="menu-card reveal delay-3">
+            <span class="menu-emoji">🫔</span>
+            <div class="menu-name">Rolls</div>
+            <div class="menu-desc">Street-style rolls packed with flavour</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARALLAX BANNER -->
+    <div class="parallax-banner" id="parallaxBanner">
+      <div class="parallax-bg-text" id="parallaxText">
+        BINDASS BINDASS BINDASS
+      </div>
+      <div class="parallax-center">
+        <h2>"Come at Bindass Cafe<br />and <em>have it</em>"</h2>
+        <div class="parallax-divider"></div>
+        <p class="parallax-handle">@bindass_cafe4</p>
+      </div>
+    </div>
+
+    <!-- SPECIALS -->
+    <section id="specials">
+      <div class="specials-inner">
+        <div class="specials-header">
+          <div>
+            <p class="section-tag reveal">Must Try</p>
+            <h2 class="section-title reveal delay-1">
+              CROWD <span>FAVOURITES</span>
+            </h2>
+          </div>
+          <a
+            href="https://instagram.com/bindass_cafe4"
+            target="_blank"
+            class="specials-follow reveal"
+          >
+            Follow @bindass_cafe4 →
+          </a>
+        </div>
+        <div class="specials-scroll reveal">
+          <div class="special-card" data-num="01">
+            <span class="special-emoji">🍔</span>
+            <div class="special-name">Momo Burger</div>
+            <div class="special-desc">
+              The one item you HAVE to try — a burger stuffed with momos. Only
+              at Bindass.
+            </div>
+            <span class="special-badge">⭐ Signature</span>
+          </div>
+          <div class="special-card" data-num="02">
+            <span class="special-emoji">🍕</span>
+            <div class="special-name">Pizza Patties</div>
+            <div class="special-desc">
+              A crispy patty layered with pizza flavours — the perfect
+              street-food fusion.
+            </div>
+            <span class="special-badge">🔥 Popular</span>
+          </div>
+          <div class="special-card" data-num="03">
+            <span class="special-emoji">☕</span>
+            <div class="special-name">Cold Coffee</div>
+            <div class="special-desc">
+              Rich, creamy, chilled cold coffee — the perfect way to end your
+              meal.
+            </div>
+            <span class="special-badge">❤️ Fan Favourite</span>
+          </div>
+          <div class="special-card" data-num="04">
+            <span class="special-emoji">🥟</span>
+            <div class="special-name">Momos</div>
+            <div class="special-desc">
+              Steamed or fried, served with fiery chutney. Mathura's street food
+              royalty.
+            </div>
+            <span class="special-badge">🥇 Best Seller</span>
+          </div>
+          <div class="special-card" data-num="05">
+            <span class="special-emoji">🍛</span>
+            <div class="special-name">Special Thali</div>
+            <div class="special-desc">
+              A wholesome, value-for-money meal that hits every note from
+              comfort to taste.
+            </div>
+            <span class="special-badge">💯 Value Pick</span>
+          </div>
+          <div class="special-card" data-num="06">
+            <span class="special-emoji">🎂</span>
+            <div class="special-name">Cake & Bakery</div>
+            <div class="special-desc">
+              Fresh-baked cakes, pastries, and treats — sweeten up your day at
+              Bindass.
+            </div>
+            <span class="special-badge">🍰 Sweet Treat</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO / CONTACT -->
+    <section id="info">
+      <div class="info-grid">
+        <div class="info-left">
+          <p class="section-tag reveal">Find Us</p>
+          <h2 class="section-title reveal delay-1">
+            VISIT <span>BINDASS</span>
+          </h2>
+          <div class="info-card reveal delay-2">
+            <div class="info-icon">📍</div>
+            <div class="info-detail">
+              <h4>Address</h4>
+              <p>
+                Shop No. 3, 1st Floor, Divyalok Colony,<br />
+                Chaudhary Digambar Singh Nagar,<br />
+                Near ATV Project, Mathura — 281001
+              </p>
+            </div>
+          </div>
+          <div class="info-card reveal delay-3">
+            <div class="info-icon">📞</div>
+            <div class="info-detail">
+              <h4>Phone / Order</h4>
+              <p><a href="tel:+919266204345">+91 92662 04345</a></p>
+            </div>
+          </div>
+          <div class="info-card reveal delay-4">
+            <div class="info-icon">📸</div>
+            <div class="info-detail">
+              <h4>Instagram</h4>
+              <p>
+                <a href="https://instagram.com/bindass_cafe4" target="_blank"
+                  >@bindass_cafe4</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="info-card reveal delay-5">
+            <div class="info-icon">🕐</div>
+            <div class="info-detail">
+              <h4>Opening Hours</h4>
+              <p>Open for Lunch & Dinner</p>
+              <div class="hours-note">
+                <strong>Note:</strong> Hours vary by platform. Please call
+                <strong>+91 92662 04345</strong> to confirm timings before
+                visiting.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-right reveal-right">
+          <p class="section-tag">Ratings</p>
+          <h3 class="ratings-title">WHAT PEOPLE SAY</h3>
+          <div class="ratings-row">
+            <div class="rating-box">
+              <div class="rating-score">4.9</div>
+              <div class="rating-stars">★★★★★</div>
+              <div class="rating-platform">Justdial</div>
+              <div class="rating-count">30 ratings</div>
+            </div>
+            <div class="rating-box">
+              <div class="rating-score">4.9</div>
+              <div class="rating-stars">★★★★★</div>
+              <div class="rating-platform">Magicpin</div>
+              <div class="rating-count">16 ratings</div>
+            </div>
+            <div class="rating-box">
+              <div class="rating-score">3.6</div>
+              <div class="rating-stars">★★★☆☆</div>
+              <div class="rating-platform">Zomato</div>
+              <div class="rating-count">114 delivery</div>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <p class="quote-text">
+              "Food, fun, and unforgettable moments—only at Bindass Cafe."
+            </p>
+            <p class="quote-author">— Bindass Cafe, Mathura</p>
+          </div>
+
+          <div class="delivery-card">
+            <span class="delivery-icon">🛵</span>
+            <div>
+              <div class="delivery-title">Home Delivery Available</div>
+              <div class="delivery-sub">
+                Order via Zomato or call us directly at
+                <a href="tel:+919266204345" class="delivery-link"
+                  >+91 92662 04345</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="tel:+919266204345" class="action-btn action-call">
+              <span class="action-icon">📞</span> Call Now
+            </a>
+            <a
+              href="https://wa.me/919266204345"
+              target="_blank"
+              class="action-btn action-whatsapp"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.15.347-.385.521-.578.173-.193.231-.33.347-.55.116-.22.058-.413-.04-.563-.099-.149-.842-2.034-1.16-2.717-.198-.42-.405-.43-.595-.435-.156-.005-.347-.005-.546-.005-.198 0-.521.073-.793.349-.272.275-1.04 1.016-1.04 2.475 0 1.46 1.064 2.866 1.212 3.064.149.198 2.066 3.16 5.011 4.305 2.945 1.145 2.945.764 3.484.713.538-.05 1.758-.713 2.005-1.405.247-.69.247-1.282.173-1.405-.074-.124-.272-.198-.57-.347z"
+                />
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 1.892.526 3.661 1.438 5.168L2 22l4.973-1.412A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.084-1.118l-.293-.174-3.018.857.85-2.94-.19-.302A8 8 0 1112 20z"
+                />
+              </svg>
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section id="social">
+      <div class="social-inner">
+        <p class="section-tag reveal">Follow the Vibe</p>
+        <h2 class="section-title reveal delay-1">
+          @BINDASS_<span>CAFE4</span>
+        </h2>
+        <p class="social-sub reveal delay-2">
+          Catch our latest drops, daily specials, and food moments on Instagram
+        </p>
+      </div>
+      <div class="insta-grid reveal">
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #2a1a0a, #3d2a10)"
+        >
+          <span><img src="https://lh3.googleusercontent.com/proxy/EXyjxl-qAoEiwkykR0R3kQOfLJerdu1QNXYGJkRy3b4iqXKN6J8RCmucnaK5NI75wxLA8yN-crgRSwHoGRzPkm4645Th2FOBe8c4nn_c4DoQaA8hl2Uvwf3IG3-5YfZrPXiN_Q5Dgol7QEAjcA2YgD5Useb81w=s1360-w1360-h1020-rw" alt="" height="300px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #1a200a, #2a3010)"
+        >
+          <span><img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFYgbuLFtdJcig1O2KesJoOB56J-pkL3vCZsTYDOztT8Osm6fkTedav1LmLZrO8HbdwCnMEPCeJsVp_aIQuZqvk8jAzmf4bPekMhtneI6DNdxipxR6BQcO2X-DviaLg1kuoxkhThRBceFd-=s1360-w1360-h1020-rw" alt="" height="300px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #1a0a0a, #2a1010)"
+        >
+          <span><img src="https://i.pinimg.com/736x/84/93/d0/8493d046c00db7f0877501528600212a.jpg" alt="" height="410px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #0a1a20, #10252a)"
+        >
+          <span><img src="https://i.pinimg.com/originals/79/28/3b/79283b8e15243836cb66752f7b31015d.jpg" alt="" height="450px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #1a1020, #251a2a)"
+        >
+          <span><img src="https://i.pinimg.com/736x/5d/0b/09/5d0b090aaac54c4b9987a1da2f9eceac.jpg" alt="" height="400px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #201a0a, #2a2010)"
+        >
+          <span><img src="https://i.pinimg.com/736x/95/c4/fc/95c4fcd8b3d221af7f414f50ebc7562d.jpg" alt="" height="310px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #2a1a0a, #3d2a10)"
+        >
+          <span><img src="https://i.pinimg.com/736x/89/4f/6e/894f6e7db4097fbe6f7439dd2d78a727.jpg" alt="" height="420px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #1a200a, #2a3010)"
+        >
+          <span><img src="https://i.pinimg.com/control1/736x/51/55/31/51553150e98c40260ed4520bb2f05b5e.jpg" alt="" height="410px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #1a0a0a, #2a1010)"
+        >
+          <span><img src="https://i.pinimg.com/736x/e7/d6/99/e7d6996706364d8659eb6fee2a5ff2a2.jpg" alt="" height="420px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #0a1a20, #10252a)"
+        >
+          <span><img src="https://i.pinimg.com/736x/97/ae/d3/97aed3490628835b8048ec55044b7c6b.jpg" alt="" height="400px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #1a1020, #251a2a)"
+        >
+          <span><img src="https://i.pinimg.com/736x/35/7f/ca/357fca6085562a1a89c4fea70fe505e7.jpg" alt="" height="310px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+        <div
+          class="insta-cell"
+          style="background: linear-gradient(135deg, #201a0a, #2a2010)"
+        >
+          <span><img src="https://i.pinimg.com/736x/4e/90/52/4e9052e44df43ea1805709c3d852f60b.jpg" alt="" height="410px"></span>
+          <div class="insta-overlay">
+            <span class="insta-at">@bindass_cafe4</span>
+          </div>
+        </div>
+      </div>
+      <div class="insta-cta">
+        <a
+          href="https://instagram.com/bindass_cafe4"
+          target="_blank"
+          class="insta-handle-link"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+            <rect
+              x="2"
+              y="2"
+              width="20"
+              height="20"
+              rx="5"
+              ry="5"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+            />
+            <line
+              x1="17.5"
+              y1="6.5"
+              x2="17.51"
+              y2="6.5"
+              stroke="white"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            />
+          </svg>
+          Follow @bindass_cafe4
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">BINDASS CAFE</div>
+      <div class="footer-tagline">"Come At Bindass Cafe and have it"</div>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="tel:+919266204345">+91 92662 04345</a></li>
+        <li>
+          <a href="https://instagram.com/bindass_cafe4" target="_blank"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+      <p class="footer-copy">
+        © 2025 Bindass Cafe, Mathura. All rights reserved.
+      </p>
+      <p class="footer-note">
+        Shop No. 3, 1st Floor, Divyalok Colony, Chaudhary Digambar Singh Nagar,
+        Near ATV Project, Mathura — 281001 · 100% Pure Veg · Home Delivery
+        Available
+      </p>
+      <p class="footer-note footer-note-italic">
+        Note: Opening hours vary across platforms. Please verify timing with the
+        cafe before visiting.
+      </p>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="fab-container">
+      <a
+        href="https://wa.me/919266204345"
+        target="_blank"
+        class="fab fab-whatsapp"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.15.347-.385.521-.578.173-.193.231-.33.347-.55.116-.22.058-.413-.04-.563-.099-.149-.842-2.034-1.16-2.717-.198-.42-.405-.43-.595-.435-.156-.005-.347-.005-.546-.005-.198 0-.521.073-.793.349-.272.275-1.04 1.016-1.04 2.475 0 1.46 1.064 2.866 1.212 3.064.149.198 2.066 3.16 5.011 4.305 2.945 1.145 2.945.764 3.484.713.538-.05 1.758-.713 2.005-1.405.247-.69.247-1.282.173-1.405-.074-.124-.272-.198-.57-.347z"
+          />
+          <path
+            d="M12 2C6.477 2 2 6.477 2 12c0 1.892.526 3.661 1.438 5.168L2 22l4.973-1.412A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 01-4.084-1.118l-.293-.174-3.018.857.85-2.94-.19-.302A8 8 0 1112 20z"
+          />
+        </svg>
+      </a>
+      <a
+        href="tel:+919266204345"
+        class="fab fab-call"
+        aria-label="Call Bindass Cafe"
+      >
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
